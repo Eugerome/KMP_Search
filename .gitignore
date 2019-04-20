@@ -1,0 +1,8 @@
+ve_params.txt
+.vscode/*
+__pycache__/*
+*.csv
+*.txt
+**/__pycache__
+**/.vscode
+tempCodeRunnerFile.py
