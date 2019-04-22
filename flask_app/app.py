@@ -11,7 +11,7 @@ def create_text():
     text = kmp.generate_string(len_txt)
 
 # this validates input
-def validate_input(pattern):
+def process_input(pattern):
     if len(pattern) > len_txt:
         return "Pattern longer than the search string, try a smaller string"
     elif len(pattern) == 0:
@@ -37,7 +37,7 @@ def home():
 @app.route("/", methods=["POST"])
 def form_post():
     pattern = request.form["pattern"]
-    pattern = validate_input(pattern)
+    pattern = process_input(pattern)
     return render_template("template.html", text = text, indexes = pattern)
 
 if __name__ == "__main__":
