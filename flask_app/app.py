@@ -24,7 +24,11 @@ def process_input(pattern):
                 success = False 
                 break
         if success is True:
-            return kmp.KMP_search(text, pattern)
+            result = kmp.KMP_search(text, pattern)
+            if result:
+                return result
+            else:
+                return "No matching pattern found"
         else:
             return 'Invalid char present, please use "A", "B", "C", or "D"'
 
