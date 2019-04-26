@@ -13,5 +13,5 @@ The webpage generates a random string out of 4 letters (A, B, C, D). The user ca
 ## To Do:
 - Replace the list output with something prettier
 - Update template
-- Highlight matched pattern in the text
+- Highlight matched pattern in the text - DONE
 - Put into a docker container
